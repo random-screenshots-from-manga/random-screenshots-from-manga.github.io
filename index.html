@@ -1,36 +1,16 @@
 <!DOCTYPE html> 
 <html> 
-<head> 
-<meta charset="utf-8"> 
-<title>random screenshots from manga</title> 
-
-<div id="content">
+ <head> 
+  <meta charset="utf-8">
+   <title> random screenshots from manga </title> 
+   <div id="content">
   <p>Random Screenshots from Manga adalah grup yang membahas dan membagikan gambar-gambar (screenshots) dari berbagai jenis manga. Grup ini terbuka untuk penggemar manga dari segala usia dan latar belakang dan bertujuan untuk memfasilitasi diskusi yang positif dan interaksi yang menyenangkan antara para anggota grup.</p>
-</div>
-<p>Anda akan dialihkan ke <span id="url">https://www.facebook.com/groups/random.screenshots.from.manga/?ref=share</span> dalam <span id="counter">10</span> detik.</p>
-
-<script type="text/javascript">
-var url = document.getElementById("url").innerHTML; 
-//ambil url tujuan dari elemen span
-var counter = 10; 
-//atur waktu hitung mundur dalam detik
-var interval = setInterval(function() { 
-//buat fungsi interval
-  counter--; //kurangi counter setiap detik
-  if (counter == 0) { 
-//jika counter sudah nol
-    clearInterval(interval); //hentikan interval
-    window.location = url;https://www.facebook.com/groups/random.screenshots.from.manga/?ref=share
-//alihkan ke url tujuan
-  } else { //jika belum nol
-    document.getElementById("counter").innerHTML = counter; 
-//tampilkan counter di elemen span
-  }
-}, 1000); 
-//atur interval setiap 1000 milidetik atau 1 detik
-</script>
-
-</head> 
-<body>Random Screenshots from Ma
-</body> 
-</html>
+  
+  <script type="text/javascript">
+   window.location.replace("https://www.facebook.com/groups/random.screenshots.from.manga/?ref=share");
+  </script>
+  <head>
+ <body>  
+</body>
+ </html>
+  
