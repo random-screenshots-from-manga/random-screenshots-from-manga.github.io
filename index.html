@@ -1,10 +1,36 @@
-<html>
- <head>
-  <title> random screenshots from manga </title> 
-  <script type="text/javascript">
-   window.location.replace("https://bit.ly/random-screenshots-from-manga-000webhostapp-com");
-  </script>
-  <head>
- <body> Random Screenshots From Manga </body>
- </html>
-  
+<!DOCTYPE html> 
+<html> 
+<head> 
+<meta charset="utf-8"> 
+<title>random screenshots from manga</title> 
+
+<div id="content">
+  <p>Ini adalah konten yang ingin Anda tampilkan sebelum pengalihan.</p>
+</div>
+<p>Anda akan dialihkan ke <span id="url">https://www.w3docs.com</span> dalam <span id="counter">10</span> detik.</p>
+
+<script type="text/javascript">
+var url = document.getElementById("url").innerHTML; 
+//ambil url tujuan dari elemen span
+var counter = 10; 
+//atur waktu hitung mundur dalam detik
+var interval = setInterval(function() { 
+//buat fungsi interval
+  counter--; //kurangi counter setiap detik
+  if (counter == 0) { 
+//jika counter sudah nol
+    clearInterval(interval); //hentikan interval
+    window.location = url; 
+//alihkan ke url tujuan
+  } else { //jika belum nol
+    document.getElementById("counter").innerHTML = counter; 
+//tampilkan counter di elemen span
+  }
+}, 1000); 
+//atur interval setiap 1000 milidetik atau 1 detik
+</script>
+
+</head> 
+<body>Random Screenshots from Ma
+</body> 
+</html>
